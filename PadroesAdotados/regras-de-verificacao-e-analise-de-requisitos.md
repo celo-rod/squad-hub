@@ -2,9 +2,9 @@
 Este documento tem por objetivo explicítar os padrões adotados na especificação de requisitos do software no projeto em questão. A especificação de requisitos é o processo de escrever os requisitos de usuário e de sistema em um documento de requisitos.
 
 ## Nomenclatura dos requisitos
-- No documento de requisitos, os requisitos funcionais serão precedidos com **RF** e um identificador crescente. Exemplo.: **RF-001**.
+- No documento de requisitos, os requisitos funcionais serão precedidos com **RF** e seguidos de um identificador crescente. Exemplo.: **RF-001**.
 
-- No documento de requisitos, os requisitos não funcionais serão precedidos com **RNF** e um identificador crescente. Exemplo.: **RNF-001**.
+- No documento de requisitos, os requisitos não funcionais serão precedidos com **RNF** e seguidos de um identificador crescente. Exemplo.: **RNF-001**.
 
 ## Classificação dos requisitos
 - Essencial: requisito sem o qual o sistema não entra em funcionamento e são escritos usando-se DEVE.
