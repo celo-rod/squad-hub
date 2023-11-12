@@ -1,0 +1,72 @@
+.janela{
+    width: 975px;
+    height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5D6BB7;
+    height: 18%;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.navbar p{
+    /*sim, isso é uma gambiarra*/
+    margin-left: 43%;
+}
+
+.navbar p{
+    color: #F1F1F1;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+}
+
+.navbar button{
+    background-color: #F1F1F1;
+    color: #5D6BB7;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.primeiraJanela{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 200px;
+    padding-top: 150px;
+}
+
+.primeiraJanela1{
+    background-color: #F1F1F1;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.escrito{
+    background-color: #5D6BB7;
+    height: 100px;
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 10px;
+}
+
+.escrito p{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    color: #F1F1F1;
+}

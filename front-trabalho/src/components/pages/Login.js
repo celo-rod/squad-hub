@@ -5,7 +5,7 @@ function Login(){
     <div className={style.janela}>
 
         <div className={style.primeiraJanela}>
-            <p>Escolha uma opção</p>
+            <p>Escolha <br></br>uma <br></br> opção</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="255" height="13" viewBox="0 0 255 13" fill="none">
             <line x1="154" y1="6.5" x2="255" y2="6.5" stroke="#F1F1F1" stroke-width="5"/>
             <line y1="6.5" x2="101" y2="6.5" stroke="#F1F1F1" stroke-width="5"/>
