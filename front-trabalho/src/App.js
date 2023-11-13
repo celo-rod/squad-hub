@@ -4,14 +4,15 @@ import Login from './components/pages/Login';
 import MenuGerente from './components/pages/MenuGerente';
 import MenuAdministrador from './components/pages/MenuAdministrador';
 import GerenciarProjeto from './components/pages/GerenciarProjeto';
+import RegistroProjeto from './components/pages/RegistroProjeto';
 //tenho que fazer as rotas
-//olhar como linkar atraves dos botões div (resolução: linkar com icon e com o texto)
-//ajustar o tamanho dos quadradinhos no menu
+//olhar como linkar atraves dos botões div (solução: linkar com icon e com o texto)
+//ajustar o tamanho dos quadradinhos no menu de gerente
 function App() {
   return (
     <div className="App">
 
-    <GerenciarProjeto/>
+    <RegistroProjeto/>
     </div>
   );
 }

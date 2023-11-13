@@ -4,7 +4,7 @@ function GerenciarProjeto() {
     <div className= {style.janela}>
 
         <nav className={style.navbar}>
-            <p>Menu</p>
+            <p>Gerenciar Projetos</p>
         </nav>
 
         <section className={style.primeiraJanela}>
