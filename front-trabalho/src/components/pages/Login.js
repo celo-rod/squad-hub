@@ -1,5 +1,6 @@
-import Forms from '../form/Input';
+import Input from '../form/Input';
 import style from './Login.module.css';
+import { Link } from 'react-router-dom';
 function Login(){
     return (
     <div className={style.janela}>
@@ -17,9 +18,9 @@ function Login(){
 
         <div className = {style.segundaJanela}>
             <p>Login</p>
-            <Forms/>
+            <Input type="text" placeholder="Nome"/>
             <input type="password" placeholder="Senha"/>
-            <button>Entrar</button>
+            <button><Link to="/menu-gerente" style={{textDecoration: 'none', color: '#FFF'}}>Entrar</Link></button>
             <a href="#">Esqueceu a senha?</a>
         </div>
 

@@ -1,9 +1,10 @@
+import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 import './App.css';
 import Login from './components/pages/Login';
 import MenuGerente from './components/pages/MenuGerente';
 import MenuAdministrador from './components/pages/MenuAdministrador';
-import GerenciarProjeto from './components/pages/GerenciarProjeto';
-import RegistroProjeto from './components/pages/RegistroProjeto';
+import GerenciarProjeto from './components/pages/Projeto/GerenciarProjeto';
+import REDProjeto from './components/pages/Projeto/RegistroAndExcluirAndDadosProjeto';
 import PopUpAviso from './components/pop-ups/PopUpAviso';
 import PopUpCodigo from './components/pop-ups/PopUpCodigo';
 import PopUpConfirmacao from './components/pop-ups/PopUpConfirmacao';
@@ -16,7 +17,28 @@ import PopUpConfirmacao from './components/pop-ups/PopUpConfirmacao';
 function App() {
   return (
     <div className="App">
-      <PopUpConfirmacao tipo="Confirmar ação?" texto="deseja realmente dar o cuzinho"/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/menu-gerente" element={<MenuGerente/>}/>
+          <Route path="/menu-administrador" element={<MenuAdministrador/>}/>
+          <Route path="/gerenciar-projeto" element={<GerenciarProjeto/>}/>
+
+          
+          <Route path="/registro-projeto" element={<REDProjeto /*action="/confirmação" method="POST"*/ botao="Salvar"/>}/>
+          <Route path="/pop-up-confirmacao" element={<PopUpConfirmacao/>}/>
+          <Route path="/pop-up-aviso" element={<PopUpAviso tipo="Cadastrado" texto="Projeto cadastrado" nome="Voltar ao menu"/>}/>
+
+          <Route path="/exclusão" element={<PopUpCodigo tipo="Excluir projeto" placeholder="Código do projeto" nome="Excluir"/>}/>
+          <Route path="/excluir-projeto" element={<REDProjeto /*action="/confirmação" method="DELETE"*/ botao="Excluir"/>}/>
+          <Route path="/pop-up-confirmacao" element={<PopUpConfirmacao />}/>
+          <Route path="/pop-up-aviso" element={<PopUpAviso tipo="Concluído" texto="Projeto excluido!" nome="Voltar ao menu"/>}/>
+          <Route path="/pop-up-aviso" element={<PopUpAviso tipo="Erro" texto="Ação abortada!" nome="Voltar ao menu"/>}/>
+          
+          <Route path="/dados-projeto" element={<REDProjeto /*action="/gerenciar-projeto" method="PUT"*/ botao="Voltar ao menu"/>}/>
+
+        </Routes>
+      </Router>
     </div>
   );
 }

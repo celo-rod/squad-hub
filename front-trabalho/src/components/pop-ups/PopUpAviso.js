@@ -1,7 +1,7 @@
 import style from './PopUpAviso.module.css';
 import Botao from '../button/Botao';
 
-function PopUpAviso({tipo, texto, nome1}) {
+function PopUpAviso({tipo, texto, nome}) {
     return (
         <div className={style.janela}>
 
@@ -11,7 +11,7 @@ function PopUpAviso({tipo, texto, nome1}) {
 
             <div className={style.corpo}>
             <p>{texto}</p>
-            <Botao nome={nome1}/>
+            <Botao nome={nome}/>
             </div>
         </div>
     )

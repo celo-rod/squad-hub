@@ -80,7 +80,7 @@
 .segundaJanela p{
     color: #5D6BB7;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -93,6 +93,7 @@
     font-style: normal;
     font-size: 22px;
     margin-bottom: 7px;
+    border-radius: 40px;
 }
 
 

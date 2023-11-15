@@ -2,15 +2,15 @@ import style from './PopUpConfirmacao.module.css';
 import Botao from '../button/Botao';
 
 
-function PopUpConfirmacao({tipo, texto}) {
+function PopUpConfirmacao() {
     return (
         <div className={style.janela}>
 
             <nav className={style.nav}>
-                <p>{tipo}</p>
+                <p>Confirmação</p>
             </nav>
 
-            <p>{texto}</p>
+            <p>Deseja completar a ação?</p>
 
             <div className={style.corpo}>
             <Botao nome="SIM"/>
