@@ -1,4 +1,4 @@
-import Forms from './Forms';
+import Forms from '../form/Input';
 import style from './Login.module.css';
 function Login(){
     return (

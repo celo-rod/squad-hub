@@ -9,7 +9,7 @@ function RegistroProjeto() {
 
             <section className={style.primeiraJanela}>
 
-                <div className={style.primeiraJanela1}>
+            <div className={style.primeiraJanela1}>
                     <input type="text" placeholder="Nome do Projeto"></input>
                     <input type="text" placeholder="Codigo"></input>
                     <input type="text" placeholder="Descrição"></input>
