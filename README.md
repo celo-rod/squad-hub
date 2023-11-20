@@ -15,8 +15,7 @@ O objetivo principal do SquadHub é proporcionar uma solução eficaz e simplifi
 - Gerentes de projeto: encarregados de criar, atribuir e gerenciar squads e projetos, garantindo uma alocação eficaz de recursos.
 
 ## 💻 Tecnologias utilizadas
-- Linguagem de programação: JavaScript.
-- Front-end: HTML, CSS e React.
-- Back-end: Node.js e Express.
-- Banco de dados: MySQL.
-Versões ainda serão definidas.
+- Linguagem de programação: JavaScript ES6.
+- Front-end: HTML5, CSS3 e React 18.2.
+- Back-end: Node.js 20.9.
+- Banco de dados: MySQL 8.0.
