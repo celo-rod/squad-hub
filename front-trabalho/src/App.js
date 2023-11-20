@@ -24,7 +24,7 @@ function App() {
           <Route path="/menu-administrador" element={<MenuAdministrador/>}/>
           <Route path="/gerenciar-projeto" element={<GerenciarProjeto/>}/>
 
-          
+
           <Route path="/registro-projeto" element={<REDProjeto /*action="/confirmação" method="POST"*/ botao="Salvar"/>}/>
           <Route path="/pop-up-confirmacao" element={<PopUpConfirmacao/>}/>
           <Route path="/pop-up-aviso" element={<PopUpAviso tipo="Cadastrado" texto="Projeto cadastrado" nome="Voltar ao menu"/>}/>
@@ -36,7 +36,10 @@ function App() {
           <Route path="/pop-up-aviso" element={<PopUpAviso tipo="Erro" texto="Ação abortada!" nome="Voltar ao menu"/>}/>
           
           <Route path="/dados-projeto" element={<REDProjeto /*action="/gerenciar-projeto" method="PUT"*/ botao="Voltar ao menu"/>}/>
+          
 
+
+          <Route path="/atualizar-projeto" element={<PopUpCodigo tipo="Digite o código para atualização" placeholder="Codigo" nome="Confirmar"/>}/>
         </Routes>
       </Router>
     </div>
