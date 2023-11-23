@@ -39,7 +39,7 @@ function GerenciarProjeto() {
                 </svg>
                 
                 <div className={style.escrito}>
-                    <p>Atualizar Projeto</p>
+                    <p><Link to ="/atualizar-projeto" style={{textDecoration: 'none', color: '#FFF'}}>Atualizar Projeto</Link></p>
                 </div>
             </div>
 

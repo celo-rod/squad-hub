@@ -12,15 +12,14 @@ function Login(){
             <line y1="6.5" x2="101" y2="6.5" stroke="#F1F1F1" stroke-width="5"/>
             <ellipse cx="127.5" cy="6.5" rx="7.5" ry="6.5" fill="#D9D9D9"/>
             </svg>
-            <button>Adiministrador</button>
-            <button>Gerente de Projetos</button>
+            <button><Link to="/menu-administrador" style={{textDecoration: 'none', color: '#5D6BB7'}}>Administrador</Link></button>
+            <button><Link to="/menu-gerente" style={{textDecoration: 'none', color: '#5D6BB7'}}>Gerente de Projetos</Link></button>
         </div>
 
         <div className = {style.segundaJanela}>
             <p>Login</p>
             <Input type="text" placeholder="Nome"/>
             <input type="password" placeholder="Senha"/>
-            <button><Link to="/menu-gerente" style={{textDecoration: 'none', color: '#FFF'}}>Entrar</Link></button>
             <a href="#">Esqueceu a senha?</a>
         </div>
 

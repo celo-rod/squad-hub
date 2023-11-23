@@ -8,12 +8,12 @@ import REDProjeto from './components/pages/Projeto/RegistroAndExcluirAndDadosPro
 import PopUpAviso from './components/pop-ups/PopUpAviso';
 import PopUpCodigo from './components/pop-ups/PopUpCodigo';
 import PopUpConfirmacao from './components/pop-ups/PopUpConfirmacao';
+import BuscarProjeto from './components/pages/Projeto/BuscarProjeto';
 
 
 
 //tenho que fazer as rotas
 //olhar como linkar atraves dos botões div (solução: linkar com icon e com o texto)
-//ajustar o tamanho dos quadradinhos no menu de gerente
 function App() {
   return (
     <div className="App">
@@ -22,28 +22,30 @@ function App() {
           <Route path="/" element={<Login/>}/>
           <Route path="/menu-gerente" element={<MenuGerente/>}/>
           <Route path="/menu-administrador" element={<MenuAdministrador/>}/>
+          
+          
+          
           <Route path="/gerenciar-projeto" element={<GerenciarProjeto/>}/>
-
-
           <Route path="/registro-projeto" element={<REDProjeto /*action="/confirmação" method="POST"*/ botao="Salvar"/>}/>
-          <Route path="/pop-up-confirmacao" element={<PopUpConfirmacao/>}/>
-          <Route path="/pop-up-aviso" element={<PopUpAviso tipo="Cadastrado" texto="Projeto cadastrado" nome="Voltar ao menu"/>}/>
+          <Route path="/projeto-cadastrado" element={<PopUpAviso tipo="Cadastrado" texto="Projeto cadastrado" nome="Voltar ao menu"/>}/>
+          
+
 
           <Route path="/exclusão" element={<PopUpCodigo tipo="Excluir projeto" placeholder="Código do projeto" nome="Excluir"/>}/>
           <Route path="/excluir-projeto" element={<REDProjeto /*action="/confirmação" method="DELETE"*/ botao="Excluir"/>}/>
           <Route path="/pop-up-confirmacao" element={<PopUpConfirmacao />}/>
-          <Route path="/pop-up-aviso" element={<PopUpAviso tipo="Concluído" texto="Projeto excluido!" nome="Voltar ao menu"/>}/>
-          <Route path="/pop-up-aviso" element={<PopUpAviso tipo="Erro" texto="Ação abortada!" nome="Voltar ao menu"/>}/>
+          <Route path="/projeto-excluido" element={<PopUpAviso tipo="Concluído" texto="Projeto excluido!" nome="Voltar ao menu"/>}/>
+          <Route path="/falha" element={<PopUpAviso tipo="Erro" texto="Ação abortada!" nome="Voltar ao menu"/>}/>
           
-          <Route path="/dados-projeto" element={<REDProjeto /*action="/gerenciar-projeto" method="PUT"*/ botao="Voltar ao menu"/>}/>
-          
-
 
           <Route path="/atualizar-projeto" element={<PopUpCodigo tipo="Digite o código para atualização" placeholder="Codigo" nome="Confirmar"/>}/>
+          <Route path="/dados-projeto" element={<REDProjeto /*action="/gerenciar-projeto" method="PUT"*/ botao="Voltar ao menu"/>}/>
+        
+
+          <Route path="/buscar-projeto" element={<BuscarProjeto />}/>
         </Routes>
       </Router>
     </div>
   );
 }
-//node modules pode ir no git.ignore e quando baixar é so rodar npm install
 export default App;

@@ -20,6 +20,8 @@ if (tipo === "Excluir projeto") {
     )
 }
 
+if (tipo === "Digite o código para atualização") {
+
     return (
         <div className={style.janela}>
 
@@ -29,10 +31,11 @@ if (tipo === "Excluir projeto") {
 
             <div className={style.corpo}>
             <Input type={tipo} placeholder={placeholder}/>
-            <Botao nome={nome}/>
+            <Link to ="/dados-projeto" style={{textDecoration: 'none', color: '#FFF'}}><Botao nome={nome}/></Link>
             </div>
         </div>
     )
+}
 
 }
 

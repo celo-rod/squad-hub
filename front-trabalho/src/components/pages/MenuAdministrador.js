@@ -1,11 +1,12 @@
 import style from './MenuAdministrador.module.css';
+import { Link } from 'react-router-dom';
 function MenuAdministrador() {
   return (
     <div className= {style.janela}>
 
         <nav className={style.navbar}>
             <p>Menu</p>
-            <button>Logout</button>
+            <button><Link to ="/" style={{textDecoration: 'none', color: '#5D6BB7'}}>Logout</Link></button>
         </nav>
 
         <section className={style.primeiraJanela}>
