@@ -31,7 +31,8 @@ function MenuGerente() {
                     </clipPath>
                     </defs>
                 </svg>
-                <div className={style.escrito}><p>Gerenciar Squads</p></div>
+                <div className={style.escrito}>
+                <p><Link to ="/gerenciar-squad" style={{textDecoration: 'none', color: '#FFF'}}>Gerenciar Squad</Link></p>                    </div>
             </div>
 
 

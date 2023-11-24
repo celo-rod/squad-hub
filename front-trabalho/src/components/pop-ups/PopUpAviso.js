@@ -3,7 +3,7 @@ import Botao from '../button/Botao';
 import {Link} from 'react-router-dom';
 
 function PopUpAviso({tipo, texto, nome}) {
-    if(nome === "Voltar ao menu" && texto === "Projeto cadastrado"){
+    if(nome === "Voltar ao menu gerente"){
     return (
         <div className={style.janela}>
 
@@ -13,13 +13,14 @@ function PopUpAviso({tipo, texto, nome}) {
 
             <div className={style.corpo}>
             <p>{texto}</p>
-            <Link to ="/gerenciar-projeto" style={{textDecoration: 'none', color: '#FFF'}}><Botao nome={nome}/></Link>
+            <Link to ="/menu-gerente" style={{textDecoration: 'none', color: '#FFF'}}><Botao nome={nome}/></Link>
             </div>
         </div>
     )
 }
 
-if(nome === "Voltar ao menu" && texto === "Projeto excluido!"){
+
+if(nome === "Voltar ao menu administrador"){
     return (
         <div className={style.janela}>
 
@@ -29,7 +30,7 @@ if(nome === "Voltar ao menu" && texto === "Projeto excluido!"){
 
             <div className={style.corpo}>
             <p>{texto}</p>
-            <Link to ="/gerenciar-projeto" style={{textDecoration: 'none', color: '#FFF'}}><Botao nome={nome}/></Link>
+            <Link to ="/menu-administrador" style={{textDecoration: 'none', color: '#FFF'}}><Botao nome={nome}/></Link>
             </div>
         </div>
     )
@@ -45,7 +46,7 @@ if(tipo === "Erro"){
 
             <div className={style.corpo}>
             <p>{texto}</p>
-            <Link to ="/gerenciar-projeto" style={{textDecoration: 'none', color: '#FFF'}}><Botao nome={nome}/></Link>
+            <Link to ="/menu-gerente" style={{textDecoration: 'none', color: '#FFF'}}><Botao nome={nome}/></Link>
             </div>
         </div>
     )

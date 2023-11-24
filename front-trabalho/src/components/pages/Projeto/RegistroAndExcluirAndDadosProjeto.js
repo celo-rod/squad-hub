@@ -48,7 +48,7 @@ function REDProjeto({action, method, botao}) {
                 <input type="text" name='descricaoProjeto' placeholder="Descrição" required></input>
                 <input type="text" name='AtividadeProjeto' placeholder="Atividade" required></input>
                 <p></p>
-                <button type="submit"><Link to ="/projeto-cadastrado" style={{textDecoration: 'none', color: '#FFF'}}>{botao}</Link></button>
+                <button type="submit"><Link to ="/pop-up-confirmacao-exclusao" style={{textDecoration: 'none', color: '#FFF'}}>{botao}</Link></button>
             </form>
 
             </section>
@@ -76,7 +76,7 @@ function REDProjeto({action, method, botao}) {
                 <input type="text" name='descricaoProjeto' placeholder="Descrição" required></input>
                 <input type="text" name='AtividadeProjeto' placeholder="Atividade" required></input>
                 <p></p>
-                <button type="submit"><Link to ="/projeto-cadastrado" style={{textDecoration: 'none', color: '#FFF'}}>{botao}</Link></button>
+                <button type="submit"><Link to ="/projeto-atualizado" style={{textDecoration: 'none', color: '#FFF'}}>{botao}</Link></button>
             </form>
 
             </section>
