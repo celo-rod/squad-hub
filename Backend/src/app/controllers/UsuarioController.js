@@ -24,7 +24,7 @@ class UsuarioController{
             return res.status(400).json({ error: 'Senha incorreta' })
         }
         const token = jwt.sign({ id: usuario[0].id }, process.env.JWT_SECRET, { expiresIn: '1d' })
-        res.json({ message: 'Login bem-sucedido', token, papel: usuario[0].papel })
+        res.json({ message: 'Login bem-sucedido', userId:usuario[0].id, token, papel: usuario[0].papel })
     }
 }
 

@@ -1,25 +1,35 @@
 import { useState } from 'react';
 import style from './Login.module.css';
-import { Link } from 'react-router-dom';
 import api from '../../services/API';
 import { ADMIN_ROLE } from '../../services/constants';
+import useAuthContext from '../../context/hooks/useAuthContext';
+import { useNavigate } from 'react-router-dom';
 
 function Login(){
     const [nome, setNome] = useState('');
     const [senha, setSenha] = useState('');
 
+    const { login } = useAuthContext();
+
+    const navigate = useNavigate();
+
     async function handleLogin(tipoConta) {
         try {
-            const { data: responseData } = await api.usuarios.login(nome, senha)
-            if (responseData.papel === ADMIN_ROLE) {
-                alert("Login realizado com sucesso");
-                // usa o papel desejado
-                return;
+            // utiliza os valores vindos de `data` como `responseData`
+            const response = await api.usuarios.login(nome, senha)
+
+            // early return
+            if (response.data.papel !== ADMIN_ROLE && tipoConta === "Admin") {
+                alert("Você não tem permissão para logar como administrador")
+                return
             }
-            if (tipoConta === "Gerente") {
-                alert("Login realizado com sucesso");
-                // usa o papel desejado
-                return;
+
+            login(response.data.token, response.data.userId, response.data.papel)
+            alert("Login realizado com sucesso");
+            if(tipoConta === "Admin"){
+                navigate('/menu-administrador')
+            }else{
+                navigate('/menu-gerente')
             }
         } catch {
             alert("Usuário ou senha incorretos")
@@ -46,8 +56,6 @@ function Login(){
             <input onChange={(e) => setSenha(e.target.value)} type="password" placeholder="Senha"/>
             <a href="#">Esqueceu a senha?</a>
         </div>
-
-        {JSON.stringify(response)}
 
      </div>
     );

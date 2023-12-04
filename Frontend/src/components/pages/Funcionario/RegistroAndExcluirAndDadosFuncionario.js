@@ -51,7 +51,7 @@ function REDFuncionario({action, method, botao}) {
                 <input type="checkbox" name="Gerente" value="Gerente"  required></input>
                 <label for="Gerente">Gerente</label>
                 
-                <button type="submit"><Link to ="/funcionario-excluido" style={{textDecoration: 'none', color: '#FFF'}}>{botao}</Link></button>
+                <button type="submit"><Link to ="/exclusao-funcionario" style={{textDecoration: 'none', color: '#FFF'}}>{botao}</Link></button>
             </form>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="228" height="228" viewBox="0 0 228 228" fill="none">

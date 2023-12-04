@@ -15,7 +15,7 @@ import BuscarSquad from './components/pages/Squad/BuscarSquad';
 import GerenciarFuncionario from './components/pages/Funcionario/GerenciarFuncionario';
 import REDFuncionario from './components/pages/Funcionario/RegistroAndExcluirAndDadosFuncionario';
 import BuscarFuncionario from './components/pages/Funcionario/BuscarFuncionario';
-import { AuthContext } from './context/AuthContext';
+import AuthContext from './context/AuthContext';
 
 
 
@@ -74,7 +74,7 @@ function App() {
             <Route path="/registro-funcionario" element={<REDFuncionario botao="Salvar"/>}/>
             <Route path="/funcionario-cadastrado" element={<PopUpAviso tipo="Cadastrado" texto="Funcionário cadastrado" nome="Voltar ao menu administrador"/>}/>
 
-            <Route path="/exclusão-funcionario" element={<PopUpCodigo tipo="Excluir funcionário" placeholder="Código do funcionário" nome="Excluir"/>}/>
+            <Route path="/exclusão-funcionario" element={<PopUpCodigo tipo="Excluir funcionario" placeholder="Código do funcionário" nome="Excluir"/>}/>
             <Route path="/excluir-funcionario" element={<REDFuncionario botao="Excluir"/>}/>
             <Route path="/funcionario-excluido" element={<PopUpAviso tipo="Concluído" texto="Funcionário excluido!" nome="Voltar ao menu administrador"/>}/>
             <Route path="/falha" element={<PopUpAviso tipo="Erro" texto="Ação abortada!" nome="Voltar ao menu"/>}/>
