@@ -17,5 +17,5 @@ O objetivo principal do SquadHub é proporcionar uma solução eficaz e simplifi
 ## 💻 Tecnologias utilizadas
 - Linguagem de programação: JavaScript ES6.
 - Front-end: HTML5, CSS3 e React 18.2.
-- Back-end: Node.js 20.9.
+- Back-end: Node.js 20.10.
 - Banco de dados: MySQL 8.0.
