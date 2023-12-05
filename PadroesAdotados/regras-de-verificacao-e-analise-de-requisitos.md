@@ -14,7 +14,7 @@ Este documento tem por objetivo explicítar os padrões adotados na especificaç
 ## Regras para o documento de requisitos
 1. Defina somente um requisito por vez.
 2. Evite as palavras: E, OU, SOMENTE SE, EXCETO, SE NECESSÁRIO, MAS, CONTUDO, ENTRETANTO, USUALMENTE, GERALMENTE, FREQUENTEMENTE, TALVEZ, PROVAVELMENTE ou palavras que forneçam a mesma ideia que essas.
-3. Evite frases grandes, trabalhe com objetividade.
+3. Evite frases grandes, trabalhe com objetividade. Máximo de 200 caracteres.
 4. Respeite o glossário estabelecido.
 
 
